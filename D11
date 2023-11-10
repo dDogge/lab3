@@ -1,0 +1,12 @@
+Swing (liksom många motsvarigheter, som Android och JavaFX) bygger på en princip
+som kallas för Hollywoodprincipen: ”Don’t call us – we’ll call you!”
+Kan du se i ditt program vad som menas med detta?
+Svar: Hollywoodprincipen innebär att användarprogrammet registrerar sina intressen och låter ramverket/systemet anropa dem när nödvändigt. 
+I mitt program ses detta genom användningen av händelselyssnare och callback-funktioner.
+
+Varför passar lambdauttryck särskilt bra ihop med denna princip?
+Svar: Lambdauttryck passar bra med Hollywoodprincipen eftersom de gör det enkelt att skapa små funktioner på plats, vilket är användbart för händelselyssnare och callback-funktioner.
+
+När kontrolldelen av ditt program ändrar ordningen i ordlistan uppdateras användargränssnittet automatiskt. Kan du förstå något om hur det hänger ihop?
+Svar: När kontrollen ändrar ordningen i ordlistan uppdateras användargränssnittet automatiskt tack vare en observer-observatör-mekanism. 
+När modellen ändras, meddelar den observatören om ändringen, vilket triggar en automatisk uppdatering av användargränssnittet.
